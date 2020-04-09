@@ -6,9 +6,9 @@
 
 ### Screen Shots
 
-<img src="https://gitlab.com/manimaran/upi-payment/raw/master/files/upi-payment_1.jpg" data-canonical-src="https://gitlab.com/manimaran/upi-payment/raw/master/files/upi-payment_1.jpg" width="300" height="500" />
+<img src="https://gitlab.com/manimaran/upi-payment/-/raw/master/files/upi_payment_1.jpg" data-canonical-src="https://gitlab.com/manimaran/upi-payment/-/raw/master/files/upi_payment_1.jpg.jpg" width="300" height="600" />
 
-<img src="https://gitlab.com/manimaran/upi-payment/raw/master/files/upi-payment_2.jpg" data-canonical-src="https://gitlab.com/manimaran/upi-payment/raw/master/files/upi-payment_2.jpg" width="300" height="500" />
+<img src="https://gitlab.com/manimaran/upi-payment/-/raw/master/files/upi_payment_2.jpg" data-canonical-src="https://gitlab.com/manimaran/upi-payment/-/raw/master/files/upi_payment_2.jpg" width="300" height="600" />
 
 <br>
 
@@ -19,7 +19,13 @@
     // upi://pay?pa=960078968101@ippb&pn=Manimaran&tn=UPI Payment by Deeplinking&am=1.0&cu=INR
 
     // GET UPI - Deeplink
-    private fun getUPIDeepLink(payeeAddress: String, payeeName: String, amount: Double, currencyUnit: String, transactionNote: String): String {
+    private fun getUPIDeepLink(
+        payeeAddress: String, 
+        payeeName: String, 
+        amount: Double, 
+        currencyUnit: String, 
+        transactionNote: String
+        ): String {
         return "upi://pay?pa=" + payeeAddress +
                 "&pn=" + payeeName +
                 "&tn=" + transactionNote +
